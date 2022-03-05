@@ -3,6 +3,8 @@ mnm = 0
 mkn = 0
 apahayoo = 0
 
+cobadongayokkkk = True
+
 struk = open('struk.txt','w')
 struk.write('''====- STRUK BELANJAAN ANDA =====\n''')
 struk.close()
