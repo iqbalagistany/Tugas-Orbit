@@ -1,0 +1,18 @@
+====SELAMAT DATANG DI WARKOP AGISTA=====
+
+==Berikut menu yang tersedia==
+
+===== MAKANAN =====
+- Pisang Goreng = 	Rp 2000
+- Tempe Mendoan = 	Rp 1000
+- Indomie Goreng = 	Rp 5000
+- Indomie Rebus = 	Rp 6000
+- Nasi Kucing = 	Rp 3000
+
+===== MINUMAN =====
+- Kopi Tubruk = 	Rp 5000
+- Wedang Ronde = 	Rp 8000
+- Susu Jahe = 	Rp 6000
+- Susu Hangat = 	Rp 4000
+- Teh Tawar = 	Rp 3000
+ 
