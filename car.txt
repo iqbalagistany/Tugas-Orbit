@@ -1,3 +1,0 @@
-Car Name = 'Swift'
-Car Year = '2000'
-Car color = 'white'
