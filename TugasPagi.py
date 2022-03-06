@@ -7,7 +7,7 @@ mkn = 0
 
 
 struk = open('struk.txt','w')
-struk.write('''====- STRUK BELANJAAN ANDA =====\n''')
+struk.write('''===== STRUK BELANJAAN ANDA =====\n''')
 struk.close()
 
 def total():
@@ -41,6 +41,7 @@ while (pesan):
     a = "Nasi Kucing"
     an = 3000
   else:
+    print("Masukkan pilihan menu yang sesuai! (1-5)")
     continue
 
   drink = int(input("Masukkan kode Minuman (1-5): "))
@@ -65,6 +66,7 @@ while (pesan):
     b = "Teh Tawar"
     bn = 3000   
   else:
+    print("Masukkan pilihan menu yang sesuai! (1-5)")
     continue
 
   print("Total Belanja: ", total())
@@ -74,20 +76,20 @@ while (pesan):
   an = repr(an)
   b = repr(b)
   bn = repr(bn)
-  struk.write(a + ":"+ "\t" + an+ "\n"+
-  b+ ":"+ "\t"+ bn)
+  struk.write("\n" + a + ":"+ "\t" + an+ "\n"+
+  b+ ":"+ "\t\t"+ bn)
   struk.close()
 
-  
+  while(pesan):
+    pesan = input("\nMau tambah pesanan lagi? (y/n)")
+    if pesan == "n":
+      pesan = False
+    elif pesan == "y":
+      break
+    else:
+      print("Masukkan pilihan yang sesuai (y or n)")
+      continue
 
-  pesan = input("\nMau tambah pesanan lagi? (y/n)")
-  if pesan == "n":
-    pesan = False
-  elif pesan =="y":
-    pesan == True
-  else:
-    print("Masukkan pilihan yang sesuai (y or n)")
-    pass
 
 uang = int(input("Masukkan Uang Anda: "))
 kembalian(uang)
@@ -95,7 +97,7 @@ kembalian(uang)
 struk = open("struk.txt", "a")
 total = repr(total())
 uang = repr(uang)
-kembalian = repr(kembalian(uang))
+#kembalian = repr(kembalian(uang))
 
 struk.write("\n Total Belanja: " + "\t" + total + "\n" +
 "Bayar: " + "\t" + uang + "\n" + "Kembalian:" + "\t" + kembalian)

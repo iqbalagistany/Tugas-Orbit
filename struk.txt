@@ -1,3 +1,4 @@
-====- STRUK BELANJAAN ANDA =====
-'Tempa Mendoan':	1000
-'Kopi Tubruk':	5000
+===== STRUK BELANJAAN ANDA =====
+
+'Indomie Goreng':	5000
+'Wedang Ronde':		8000
