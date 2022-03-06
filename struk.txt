@@ -1,4 +1,14 @@
 ===== STRUK BELANJAAN ANDA =====
 
+'Tempa Mendoan':	1000
+'Susu Jahe':		6000
 'Indomie Goreng':	5000
 'Wedang Ronde':		8000
+'Indomie Rebus':	6000
+'Kopi Tubruk':		5000
+'Nasi Kucing':	3000
+'Kopi Tubruk':		5000
+
+Total Belanja:	39000
+Bayar:			40000
+Kembalian:		1000

@@ -1,5 +1,3 @@
-from pip import main
-
 
 pesan = True
 mnm = 0
@@ -13,9 +11,10 @@ struk.close()
 def total():
   return mkn + mnm
 
-def kembalian(uang):
-    angsul = uang - total()
-    return angsul
+#def kembalian(uang):
+   # angsul = uang - total()
+    #angsul = repr(angsul)
+    #return angsul
 
 while (pesan):
   print("\nSilahkan Pilih Menu yang Anda inginkan")
@@ -42,6 +41,8 @@ while (pesan):
     an = 3000
   else:
     print("Masukkan pilihan menu yang sesuai! (1-5)")
+    mkn = 0
+    an = 0
     continue
 
   drink = int(input("Masukkan kode Minuman (1-5): "))
@@ -67,6 +68,8 @@ while (pesan):
     bn = 3000   
   else:
     print("Masukkan pilihan menu yang sesuai! (1-5)")
+    mnm = 0
+    bn = 0
     continue
 
   print("Total Belanja: ", total())
@@ -92,13 +95,13 @@ while (pesan):
 
 
 uang = int(input("Masukkan Uang Anda: "))
-kembalian(uang)
+kembalian = uang - total()
 
 struk = open("struk.txt", "a")
 total = repr(total())
 uang = repr(uang)
-#kembalian = repr(kembalian(uang))
+kembalian = repr(kembalian)
 
-struk.write("\n Total Belanja: " + "\t" + total + "\n" +
-"Bayar: " + "\t" + uang + "\n" + "Kembalian:" + "\t" + kembalian)
+struk.write("\n\nTotal Belanja:\t" + total + "\n" +
+"Bayar:\t\t\t" + uang + "\n" + "Kembalian:\t\t" + kembalian)
 struk.close()
